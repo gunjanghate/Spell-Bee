@@ -1,0 +1,195 @@
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto Slab', serif;
+}
+.rounded{
+      border-radius: 50%;
+      background-color: var(--clr);
+      width: 45px;
+}
+.mr-10{
+      transition: .6s  ease-in-out;
+      padding-left: 30px;
+}
+.mr-10:hover{
+      font-size: 1.3em;
+
+}
+body{
+      background-color: var(--clr);
+      background-image: url('WhatsApp\ Image\ 2024-01-16\ at\ 11.40.11.jpeg');
+      background-blend-mode: darken;
+}
+.info-butn{
+      margin-left: 100px;
+      font-size: 2em;
+      color: white;
+      /* padding-left: 300px; */
+}
+:root{
+      --clr: #17181b;
+      --yel:  #e5f815;
+}
+
+header{
+      position: sticky;
+      height: 10vh;
+      top: 0;
+      backdrop-filter: 10px;
+     
+}
+
+
+.secstart{
+      height: 20%;
+      /* background-color: black; */
+      /* background-color: var(--clr); */
+}
+.poster{
+      display: flex;
+      margin-left: 495px;
+      margin-top: 10px;
+      /* position: relative;
+      left: -10vw; */
+      /* position: absolute; */
+      justify-content: center;
+      background-size: cover;
+      /* background-position: center; */
+      border-radius: 8px;
+}
+.poster-about{
+      max-height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #e5f815;
+      flex-direction: column;
+}
+.games{
+      max-height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #e5f815;
+      flex-direction: column;
+      margin-bottom: 131px;
+}
+.game-grid{
+      padding-top: 20px;
+      
+
+}
+.about-heading{
+      margin-top: 10px;
+      font-size: 2em;
+      text-shadow: 1px 1px 1px 1px white;
+
+}
+.poster-about-cont{
+      color: white;
+      font-size: 1.2em;
+      margin: 10pxpx 20px;
+      padding: 0px 10px;
+}
+.about-games{
+      margin-top: 124px;
+      margin-bottom: 5px;
+      font-size: 2em;
+      text-shadow: 1px 1px 1px 1px white;
+
+}
+html{
+      scroll-behavior: smooth;
+}
+
+.game-container{
+      font-size: 1.8em;
+      font-weight: 100;
+   margin-left: 10px;
+   color: white;
+}
+.game-container:hover{
+      color: var(--yel);
+}
+#game1, #game2{
+      height: 20vh;
+      width: 45vw;
+      background: var(--clr);
+      color: var(--yel);
+      transition: .5s all;
+      padding-left: 20px;
+     
+}
+#game1:hover, #game2:hover{
+      background: rgb(46, 46, 46);
+      color: rgb(255, 119, 0);
+      
+}
+
+.load{
+     background-color: red;
+     height: 6px;
+     animation: 1s load reverse 1 ;
+     transition: .3s ease-in-out;
+}
+@keyframes load {
+      0%{
+            width: 25vw;
+      }
+      25%{
+            width: 60vw;
+      }
+      50%{
+            width: 100vw;
+      }
+      100%{
+            width: 0vw;
+      }
+}
+@media  screen and (max-width: 916px) {
+      header{
+            height: 26vh;
+
+      }
+      a{
+            /* margin: 0px, 0px; */
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+      }
+      a:hover{
+            color: var(--yel);
+      }
+      .games{
+            height: 50vh;
+            position: relative;
+            top: 220px;
+            /* overflow: scroll; */
+            /* margin-bottom: 100px; */
+            overflow: scroll;
+
+      }
+      
+      
+      
+      .about-games{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 20px;
+            font-size: 1.6em;
+      }
+      #game1, #game2{
+            font-size: 1.1em;
+      }
+      footer{
+            /* height: auto; */
+            position: relative;
+            bottom: 0;
+      }
+      
+}

@@ -1,0 +1,240 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+body {
+  background-color: var(--clr);
+  background-image: url("WhatsApp\ Image\ 2024-01-16\ at\ 11.40.11.jpeg");
+  background-blend-mode: darken;
+}
+#app {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+:root {
+  --clr: #17181b;
+  --yel: #e5f815;
+}
+.header-miss {
+  margin-top: 100px;
+  background-color: var(--yel); /* Black background */
+  color: var(--clr); /* Yellow text color */
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.name {
+  font-family: "Roboto Slab", serif;
+  color: var(--clr);
+  font-weight: bold;
+  font-size: 2em;
+}
+main {
+  background-color: var(--yel); /* Black background */
+  color: var(--clr); /* Yellow text color */
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+#game-container {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 21px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#result {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#result.correct {
+  color: #27ae60; /* Green color for correct answer */
+}
+
+#result.incorrect {
+  color: #e74c3c; /* Red color for incorrect answer */
+}
+
+.footer-miss {
+  background-color: #000000; /* Black background */
+  color: #ffe816; /* Yellow text color */
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  margin-top: 20px;
+}
+
+#score-timer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.how{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.miss{
+    background: transparent var(--clr);
+    color: white;
+
+}
+.head-how{
+    font-size: 2.2em;
+    font-weight: 100;
+    margin: 0px 10px;
+}
+.ans-how{
+    margin: 0px 10px;
+    font-weight: 100;
+   font-size: 1.5em;
+}
+
+#score,
+#timer {
+  font-size: 18px;
+}
+.mr-10{
+    transition: .6s  ease-in-out;
+    padding-left: 30px;
+}
+.mr-10:hover{
+    font-size: 1.3em;
+
+}
+#restart-btn, #hint-btn{
+  background-color: var(--clr); /* Yellow background for buttons */
+  color: var(--yel); /* Black text color for buttons */
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 12px;
+  height: 38px;
+  width: 79px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  /* padding-bottom: 8px; */
+  text-align: center;
+  vertical-align: middle;
+}
+header{
+    position: sticky;
+    top: 0;
+    /* height: 10vh; */
+    box-shadow: 0px 1px 0px 1px var(--yel);
+}
+
+#restart-btn:hover, #hint-btn{
+  background-color: rgb(59, 58, 58); /* Light gray color on hover */
+  color: var(--yel);
+}
+.check {
+    background-color: gainsboro; /* Yellow background for buttons */
+    color: black; /* Black text color for buttons */
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 12px;
+    height: 40px;
+    width: 162px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    /* padding-bottom: 8px; */
+    text-align: center;
+    vertical-align: middle;}
+#score {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#timer {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+p{
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+/* footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    font-size: 1em;
+} */
+
+
+.rounded{
+    border-radius: 50%;
+    background-color: var(--clr);
+    width: 45px;
+}
+.mr-10{
+    transition: .6s  ease-in-out;
+    padding-left: 30px;
+}
+.mr-10:hover{
+    font-size: 1.3em;
+
+}
+
+.info-butn{
+    margin-left: 100px;
+    font-size: 2em;
+    color: white;
+    /* padding-left: 300px; */
+}
+
+
+#user-input{
+    color: var(--clr);
+}
+.about-heading{
+    margin-top: 10px;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px 1px white;
+
+}
+@media screen and (max-width: 916px) {
+  footer{
+    position: relative;
+    bottom: 0;
+}
+header{
+  height: 26vh;
+
+}
+a{
+  /* margin: 0px, 0px; */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+}
+a:hover{
+  color: var(--yel);
+}
+}

@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background */
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; /* Increased gap for more space between containers */
+    padding: 40px; /* Increased padding for more space around the grid */
+}
+
+.game-container {
+    background-color: #ffe816; /* Yellow background */
+    color: #000000; /* Black text color */
+    border: 1px solid #000000; /* Black border */
+    border-radius: 30px; /* Larger border radius */
+    padding: 60px; /* Increased padding for a much larger container */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.game-container:hover {
+    background-color: #ffcc29; /* Darker yellow background on hover */
+}
+
+h2 {
+    color: #000000; /* Black heading color */
+    font-size: 32px; /* Larger font size for the heading */
+}
+
+p {
+    color: #333333; /* Dark gray text color */
+    font-size: 24px; /* Larger font size for the text */
+}
+

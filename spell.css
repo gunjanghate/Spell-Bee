@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe816; /* Yellow background */
+    color: #000000; /* Black text color */
+}
+
+#app {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+*{
+    margin: 50px;
+}
+
+header {
+    background-color: var(--yel); /* Black background */
+    color: #ffe816; /* Yellow text color */
+    padding: 20px;
+    /* border-radius: 10px 10px 0 0; */
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    background-color: #000000; /* Black background */
+    color: #ffe816; /* Yellow text color */
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+#game-container {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#result.correct {
+    color: #27ae60; /* Green color for correct answer */
+}
+
+#result.incorrect {
+    color: #e74c3c; /* Red color for incorrect answer */
+}
+
+.spell-right {
+    background-color: #000000; /* Black background */
+    color: #ffe816; /* Yellow text color */
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    margin-top: 20px;
+}
+
+#score-timer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#score, #timer {
+    font-size: 18px;
+}
+
+#restart-btn, #next-word-btn, #hint-btn {
+    background-color: #ffe816; /* Yellow background for buttons */
+    color: #000000; /* Black text color for buttons */
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+#restart-btn:hover, #next-word-btn:hover, #hint-btn:hover {
+    background-color: gray; /* Light gray color on hover */
+}
+:root{
+    --clr: #17181b;
+    --yel:  #e5f815;
+}
+.miss{
+    background: transparent var(--clr);
+    color: white;
+
+}
+.head-how{
+    font-size: 2.2em;
+    font-weight: 100;
+    margin: 0px 10px;
+    color: black
+}
+.ans-how{
+    margin: 0px 10px;
+    font-weight: 100;
+   font-size: 1.5em;
+}
+/* footer.text-gray{
+    width: 100vw;
+} */
+header{
+    position: sticky;
+    top: 0;
+    /* height: 10vh; */
+    box-shadow: 0px 1px 0px 1px var(--yel);
+}

@@ -1,0 +1,177 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+.rounded{
+    border-radius: 50%;
+    background-color: var(--clr);
+    width: 45px;
+}
+.mr-10{
+    transition: .6s  ease-in-out;
+    padding-left: 30px;
+}
+.mr-10:hover{
+    font-size: 1.3em;
+
+}
+body{
+    background-color: var(--clr);
+    background-image: url('WhatsApp\ Image\ 2024-01-16\ at\ 11.40.11.jpeg');
+    background-blend-mode: darken;
+}
+.info-butn{
+    margin-left: 100px;
+    font-size: 2em;
+    color: white;
+    /* padding-left: 300px; */
+}
+:root{
+    --clr: #17181b;
+    --yel:  #e5f815;
+}
+
+.text-gray{
+    position: sticky;
+    height: 10vh;
+    box-shadow: 0px 1px 0px 1px var(--yel);
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+#app {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000000; /* Black background */
+    color: #ffe816; /* Yellow text color */
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    background-color: #000000; /* Black background */
+    color: #ffe816; /* Yellow text color */
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+#game-container {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#result.correct {
+    color: #27ae60; /* Green color for correct answer */
+}
+
+#result.incorrect {
+    color: #e74c3c; /* Red color for incorrect answer */
+}
+
+footer {
+    background-color: #000000; /* Black background */
+    color: #ffe816; /* Yellow text color */
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    margin-top: 20px;
+}
+
+#score-timer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#score, #timer {
+    font-size: 18px;
+}
+
+#next-word-btn {
+    background-color: #ffe816; /* Yellow background for buttons */
+    color: #000000; /* Black text color for buttons */
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+#next-word-btn:hover {
+    background-color: #cccccc; /* Light gray color on hover */
+}
+
+#restart-btn {
+    background-color: #ffe816; /* Yellow background for buttons */
+    color: #000000; /* Black text color for buttons */
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+#restart-btn:hover {
+    background-color: #cccccc; /* Light gray color on hover */
+}
+
+#random-letters {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.letter-cell {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ffe816; /* Yellow background for letter cells */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000; /* Black text color for letters */
+    font-weight: bold;
+    margin: 0 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

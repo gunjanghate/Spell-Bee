@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spell Bee A-Z | Missing Word Game</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (4)/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io (4)/favicon-32x32.png">
+    <link rel="stylesheet" href="miss.css">
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+</head>
+<body>
+    <header class="text-gray-400 bg-gray-900 body-font">
+      <div
+        class="container ml-5 flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-white mb-4 md:mb-0"
+          href="#home"
+        >
+          <div class="bee-image">
+            <img src="honey bee.jpeg" class="rounded" alt="logo" />
+          </div>
+          <span class="ml-3 text-3xl">
+            Spell <span style="color: yellow">Bee</span> A-
+            <span style="color: yellow">Z</span>
+          </span>
+        </a>
+        <nav
+          class="md:ml-auto md:mr-auto flex flex-wrap justify-evenly items-center text-base"
+        >
+          <li class="list-none cursor-pointer">
+            <a class="mr-10 text-xl hover:text-yellow-300" href="home.html">Home</a>
+            <a class="mr-10 text-xl hover:text-yellow-300" href="home.html">Games</a>
+            <a class="mr-10 text-xl hover:text-yellow-300">Contact Us</a>
+            <!-- <a class="mr-5 hover:text-white">Fourth Link</a> -->
+          </li>
+          <div class="info-butn">
+            <ion-icon name="information-circle-outline"></ion-icon>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="miss">
+
+        <div class="how"><div class="head-how" style="color: yellow;"><u> How to play?</u></div> <br>
+        <div class="ans-how">You will be given a word with its letters jumbled i.e. the letters won’t be in the right order. You have to guess the word by rearranging the letters. If you face challenges, can click on the “hint” button, it will give you the meaning of the word. If you can’t guess a word, instead to wasting your precious seconds, you can guess another word by clicking on the “Next Word” button.
+            </div> <br> <br>
+           
+            <div class="head-how" style="color: yellow;"><u>Scoring system and time limit</u></div>
+            <div class="ans-how"> For every correct word you guess, you will score 10 points. You have to guess as many words as you can in 60 seconds.</div>
+            
+        </main>
+            <div id="app">
+                <div class="header-miss">
+                    
+            <h1 class="name">Missing Word Game</h1>
+            
+        </div>
+        <main>
+            <div id="game-container">
+                <p id="word"></p>
+                <input type="text" id="user-input" placeholder="Your answer" >
+                <button class="check" id="check-answer-btn" onclick="checkAnswer()">Check Answer</button>
+                <button id="hint-btn" onclick="provideHint()">Hint</button>
+                <p id="result"></p>
+            </div>
+            <div id="score-timer">
+                <p id="score">Score: 0</p>
+                <p id="timer">Time: 60s</p>
+            </div>
+            <button id="restart-btn" onclick="restartGame()">Start</button>
+        </main>
+     <div class="footer-miss">
+
+         <p style="font-weight: 400;">Test your vocabulary! 🧠</p>
+        </div>
+        
+    </div>
+    <footer class="text-gray-400 bg-gray-900 body-font" id="footer">
+      <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white" href="#home">
+          <img src="honey bee.jpeg" class="rounded" alt="logo" />
+          <span class="ml-3 text-xl cursor-pointer"> Spell <span style="color: yellow;">Bee</span> A- <span style="color: yellow;">Z</span> </span>
+        </a>
+        <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2024  — Spell <span style="color: yellow;">Bee</span> A- <span style="color: yellow;">Z</span>
+          <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">-Threebees | All Rights Reserved</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-gray-400  hover:text-yellow-300">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400  hover:text-yellow-300">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400  hover:text-yellow-300">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400  hover:text-yellow-300">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+    <script src="miss.js"></script>
+</body>
+</html>
+

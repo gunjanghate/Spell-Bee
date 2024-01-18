@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spell Bee A-Z | Home-Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io (4)/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io (4)/favicon-32x32.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="miss.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+<body>
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div
+          class="container ml-5 flex flex-wrap p-5 flex-col md:flex-row items-center"
+        >
+          <a
+            class="flex title-font font-medium items-center text-white mb-4 md:mb-0"
+            href="#home"
+          >
+            <div class="bee-image">
+              <img src="honey bee.jpeg" class="rounded" alt="logo" />
+            </div>
+            <span class="ml-3 text-3xl">
+              Spell <span style="color: yellow">Bee</span> A-
+              <span style="color: yellow">Z</span>
+            </span>
+          </a>
+          <nav
+            class="md:ml-auto md:mr-auto flex flex-wrap justify-evenly items-center text-base"
+          >
+            <li class="list-none cursor-pointer">
+              <a class="mr-10 text-xl hover:text-yellow-300">Home</a>
+              <a class="mr-10 text-xl hover:text-yellow-300">Games</a>
+              <a class="mr-10 text-xl hover:text-yellow-300">Contact Us</a>
+              <!-- <a class="mr-5 hover:text-white">Fourth Link</a> -->
+            </li>
+            <div class="info-butn">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <div id="app">
+        <class class="header">
+            <h1>Word Game</h1>
+        </class>
+
+        
+        <main>
+            <div id="game-container">
+                <div id="random-letters"></div>
+                <input type="text" id="user-input" placeholder="Type a word">
+                <button id="check-word-btn" onclick="checkWord()">Check Word</button>
+                <p id="result"></p>
+            </div>
+            <div id="score-timer">
+                <p id="score">Score: 0</p>
+                <p id="timer">Time: 60s</p>
+            </div>
+            <button id="next-word-btn" onclick="nextWord()">Next Word</button>
+            <button id="restart-btn" onclick="restartGame()">Restart</button>
+        </main>
+        <class class="footer">
+            <p>Form a valid word! 🧠</p>
+        </class>
+
+        
+    </div>
+    <div class="footer">
+
+        <div class="footer"> &copy; Copyright 2024 www.spellbeeatoz.com || All Rightrs Reserved</div>
+    
+</div>
+    <script src="game.js"></script>
+</body>
+</html>
+
+
+
