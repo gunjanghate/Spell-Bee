@@ -175,7 +175,20 @@ html{
             overflow: scroll;
 
       }
-      
+      .poster{
+            display: flex;
+            margin-left: 22vw;
+            margin-top: 10px;
+            margin-bottom: 187px;
+            /* position: relative;
+            left: -10vw; */
+            /* position: absolute; */
+            width: 50vw;
+            justify-content: center;
+            background-size: cover;
+            /* background-position: center; */
+            border-radius: 8px;
+      }
       
       
       .about-games{

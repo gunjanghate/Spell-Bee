@@ -360,6 +360,13 @@ nav ul li .text:hover{
             width: 45px;
             margin-bottom: auto;
       }
+      .write{
+            margin-left: 5px ;
+            color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+      
+      }
       section{
             height: 80vh;
             margin-bottom: 30px;
