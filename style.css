@@ -101,11 +101,12 @@ section{
 }
 .sectionleft{
       width: 84vw;
+      height: 47.5vh;
       border-radius: 64%;
       box-shadow: 5px 0px 30px 0px rgb(81, 81, 81);
       transition: .3s  2s ease-in-out;
-      max-width: 105%;
-      height: 290px;
+      /* max-width: 105%; */
+      /* height: 290px; */
 }
 .sectionright{
       margin-right: 10px;
@@ -122,7 +123,7 @@ section{
 }
 img.sec{
       border-radius: 64%;
-      max-width: 105%;
+      max-width: 100%;
       /* border: 2px solid var(--clr); */
       
 }
@@ -152,10 +153,11 @@ img.sec{
       transition: .3s  ease-in-out;
 }
 .butn1:hover{
-      width: 150px;
+      width: 149px;
       font-size: 1.45em;
-      height: 58px;
-      box-shadow: -1px 2px 1px 2px #d3d3d3;
+      height: 56px;
+      background-color: rgb(253, 253, 72);
+      box-shadow: -1px 2px 1px 1px #d3d3d3;
 }
 
 span.star:nth-child(1){
