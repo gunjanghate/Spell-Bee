@@ -50,11 +50,13 @@ header{
 }
 .poster{
       display: flex;
-      margin-left: 495px;
+      margin-left: 22vw;
       margin-top: 10px;
+      margin-bottom: 10px;
       /* position: relative;
       left: -10vw; */
       /* position: absolute; */
+      width: 50vw;
       justify-content: center;
       background-size: cover;
       /* background-position: center; */
